@@ -1,0 +1,40 @@
+body, html {
+    background: #f6f7fd;
+    ffont-family: 'Fira Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  div {
+    box-sizing: border-box;
+  }
+  .container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    max-width: 1170px;
+    margin: 30px auto;
+  }
+  .card {
+    background: #fff;
+    box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0, 32, 128, 0.1), 0 0 0 1px #f0f2f7;
+    color: #57727c;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "title title" "chart chart";
+    padding: 30px;
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 1.25rem;
+    grid-area: title;
+    text-align: center;
+  }
+  .chart {
+    grid-area: chart;
+  }
+  div.chart svg g g.axis g.tick text {
+    font-size: 14px;
+  }
+  
